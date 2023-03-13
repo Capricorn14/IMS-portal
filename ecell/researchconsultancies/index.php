@@ -11,7 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> RESEARCH PROJECTS / SEMINARS</title>
+    <title> Book Chapters Published </title>
 
     <link rel="stylesheet" href="styles.css">
     
@@ -49,7 +49,7 @@ session_start();
 
                     <div class="modal-body">
 
-                        <!-- <div class="form-group">
+                        <div class="form-group">
                             <label>Year</label>
                             <select name="Year_Of_Publication" class="form-control" required>
                                 <option value="">--Select Year--</option>
@@ -73,7 +73,7 @@ session_start();
                                 <option name="Branch" value="Electrical">Electrical</option>
                                 <option name="Branch" value="Humanities">Humanities</option>
                             </select>
-                        </div> -->
+                        </div>
 
                         <div class="form-group">
                             <label> Title of the Book Published </label>

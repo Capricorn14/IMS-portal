@@ -13,7 +13,7 @@
           <h4>Workshop/
             Seminars</h4>
           <p>organised by the Department</p>
-          <a href="workshop/index.php">Go to Criteria</a>
+          <a href="workshop-seminars/index.php">Go to Criteria</a>
         </div>
       </div>
     </div>
@@ -31,15 +31,23 @@
     <div class="card">
       <div class="box">
         <div class="content">
-          <h4>Research Projects/
-            Consultancy</h4>
+          <h4>Research Projects</h4>
           <p>details</p>
-          <a href="research/index.php">Go to Criteria</a>
+          <a href="researchprojects/index.php">Go to Criteria</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h4>Research Consultancies</h4>
+          <p>details</p>
+          <a href="researchconsultancies/index.php">Go to Criteria</a>
         </div>
       </div>
     </div>
 
-    <
+    
         
   <?php include('../header.php'); ?>  
   </body>
