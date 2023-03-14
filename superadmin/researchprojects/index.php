@@ -11,7 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> RESEARCH PROJECTS/SEMINARS</title>
+    <title> RESEARCH PROJECTS</title>
 
     <link rel="stylesheet" href="styles.css">
     
@@ -45,7 +45,7 @@ session_start();
                 ?>
 
             <div class="card-body mt-5">
-                <h2> Reasearch projects/seminars </h2>
+                <h2> Reasearch projects</h2>
             </div>
             <div class="card">
                 <div class="card-body btn-group">
@@ -68,7 +68,7 @@ session_start();
                     <table id="datatableid" class="table table-bordered table-dark mt-2">
                         <thead>
                             <tr>
-                                <th scope="col"> S.N </th>
+                                <th scope="col"> ID </th>
                                 <th scope="col"> NAME OF PROJECT/ENDOWNMENTS </th>
                                 <th scope="col"> NAME OF PRINCIPAL INVESTIGATOR/CO-INVESTIGATOR </th>
                                 <th scope="col"> DEPARTMENT OF PRINCIPAL INVESTIGATOR</th>
@@ -97,7 +97,7 @@ session_start();
                             }
 
 
-                        $table_query = "SELECT * FROM researchproject ORDER BY sn ASC";
+                        $table_query = "SELECT * FROM researchproject ORDER BY id ASC";
                         $query_run = mysqli_query($connection, $table_query);
                         $query_result = mysqli_num_rows($query_run); ?>
 
@@ -106,7 +106,7 @@ session_start();
                                             ?>
                         <tbody> <!-- change -->
                             <tr>
-                                <td> <?php echo $developer['sn']; ?> </td>
+                                <td> <?php echo $developer['id']; ?> </td> 
                                 <td> <?php echo $developer['Name_Of_Project_Endownment']; ?> </td> 
                                 <td> <?php echo $developer['Name_Of_Principal_Investigator_Co-Investigator']; ?> </td>
                                 <td> <?php echo $developer['Department_Of_Principal_Investigator']; ?> </td>
@@ -118,7 +118,7 @@ session_start();
                                 <td> <?php echo $developer['Type_Govt_Non-Govt']; ?> </td>
                                 <td>
                             <!--<a href="read.php?viewid=<?php echo htmlentities ($developer['id']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>-->
-                            <a href="uploadsindexit/<?php echo $developer['pdffile1']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
+                            <a href="../../ecell/researchprojects/uploadsindex1/<?php echo $developer['pdffile1']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
 							
 							
                             
@@ -154,7 +154,7 @@ session_start();
                     <table class="table table-bordered ">
                     <thead>
                         <tr>
-                            <th> S.N </th> 
+                            <th> ID </th>
                             <th> NAME OF PROJECT/ENDOWNMENTS </th>
                             <th> NAME OF PRINCIPAL INVESTIGATOR/CO-INVESTIGATOR </th>
                             <th> DEPARTMENT OF PRINCIPAL INVESTIGATOR </th>
@@ -171,7 +171,7 @@ session_start();
     if (isset($_POST["submit"])) {
         $str = mysqli_real_escape_string($connection, $_POST["search"]);
 
-            $sth = "SELECT * FROM `researchproject` WHERE sn LIKE '%$str%' OR Name_Of_Project_Endownment LIKE '%$str%' OR Name_Of_Principal_Investigator_Co-Investigator LIKE '%$str%' OR Department_Of_Principal_Investigator LIKE '%$str%' OR Year_Of_Award LIKE '%$str%' OR Amount_Sanctioned LIKE '$str' OR Duration_Of_The_Project LIKE '%$str%' OR Name_Of_The_Funding_Agency LIKE '%$str%' OR Funding_Agency_Website_Link LIKE '%$str%' OR Type_Govt_Non-Govt LIKE '%$str%'";
+            $sth = "SELECT * FROM `researchproject` WHERE id LIKE '%$str%' OR Name_Of_Project_Endownment LIKE '%$str%' OR Name_Of_Principal_Investigator_Co-Investigator LIKE '%$str%' OR Department_Of_Principal_Investigator LIKE '%$str%' OR Year_Of_Award LIKE '%$str%' OR Amount_Sanctioned LIKE '$str' OR Duration_Of_The_Project LIKE '%$str%' OR Name_Of_The_Funding_Agency LIKE '%$str%' OR Funding_Agency_Website_Link LIKE '%$str%' OR Type_Govt_Non-Govt LIKE '%$str%'";
         
         $result = mysqli_query($connection, $sth);
         $queryresult = mysqli_num_rows($result); ?>
@@ -189,7 +189,7 @@ session_start();
                     <tbody id="srch"> 
              
                     <tr>                
-                        <td> <?php echo $row['sn']; ?> </td>
+                        <td> <?php echo $row['id']; ?> </td>
                         <td> <?php echo $row['Name_Of_Project_Endownment']; ?> </td> 
                         <td> <?php echo $row['Name_Of_Principal_Investigator_Co-Investigator']; ?> </td>
                         <td> <?php echo $row['Department_Of_Principal_Investigator']; ?> </td>
@@ -202,7 +202,7 @@ session_start();
                         
                         <td>
                             <!--<a href="read.php?viewid=<?php echo htmlentities ($developer['id']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>-->
-                            <a href="uploadsindexextc/<?php echo $developer['pdffile1']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
+                            <a href="../../ecell/researchprojects/uploadsindex2/<?php echo $developer['pdffile1']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
 							
                             
                             
@@ -277,7 +277,7 @@ session_start();
 
                 console.log(data);
                 //chnage this keep same variable as above
-                $('#update_sn').val(data[0]);
+                $('#update_id').val(data[0]);
                 $('#Name_Of_Project_Endownment').val(data[1]);
                 $('#Name_Of_Principal_Investigator_Co-Investigator').val(data[2]);
                 $('#Department_Of_Principal_Investigator').val(data[3]);

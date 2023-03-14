@@ -11,7 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> WORKSHOP/SEMINARS</title>
+    <title> Certificate Programs</title>
 
     <link rel="stylesheet" href="styles.css">
     
@@ -49,91 +49,84 @@ session_start();
 
                     <div class="modal-body">
 
-                        <!-- <div class="form-group">
-                            <label>Year</label>
-                            <select name="Year_Of_Publication" class="form-control" required>
-                                <option value="">--Select Year--</option>
-                                <option name="Year_Of_Publication" value="2017-18">2017-18</option>
-                                <option name="Year_Of_Publication" value="2018-19">2018-19</option>
-                                <option name="Year_Of_Publication" value="2019-20">2019-20</option>
-                                <option name="Year_Of_Publication" value="2020-21">2020-21</option>
-                                <option name="Year_Of_Publication" value="2021-22">2021-22</option>
-                                <option name="Year_Of_Publication" value="2021-22">2022-23</option>
-                            </select>
-                        </div>
-
                         <div class="form-group">
-                            <label>Branch</label>
+                            <label>Year of offering</label>
+                            <select name="Year_of_offering" class="form-control" required>
+                                <option value="">--Select Year--</option>
+                                <option name="Year_of_offering" value="2017-18">2017-18</option>
+                                <option name="Year_of_offering" value="2018-19">2018-19</option>
+                                <option name="Year_of_offering" value="2019-20">2019-20</option>
+                                <option name="Year_of_offering" value="2020-21">2020-21</option>
+                                <option name="Year_of_offering" value="2021-22">2021-22</option>
+                                <option name="Year_of_offering" value="2021-22">2022-23</option>
+                            </select>
+</div>
+                        <div class="form-group">
+                            <label>Department</label>
                             <select name="Branch" class="form-control" required>
                                 <option value="">--Select Department--</option>
-                                <option name="Branch" value="IT">IT</option>
-                                <option name="Branch" value="EXTC">EXTC</option>
-                                <option name="Branch" value="Mechanical">Mechanical</option>
-                                <option name="Branch" value="Computers">Computers</option>
-                                <option name="Branch" value="Electrical">Electrical</option>
-                                <option name="Branch" value="Humanities">Humanities</option>
-                            </select>
-                        </div> -->
-
-                        <div class="form-group">
-                            <label> Year </label>
-                            <input type="text" name="year" class="form-control" placeholder="Year in which workshop conducted" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label> Type of Activity </label>
-                            <select name="workshop_or_seminar" class="form-control" required>
-                                <option value="">--Select Type of Activity--</option>
-                                <option name="workshop_or_seminar" value="workshop">Workshop</option>
-                                <option name="workshop_or_seminar" value="seminar">Seminar</option>
+                                <option name="Department" value="IT">IT</option>
+                                <option name="Department" value="EXTC">EXTC</option>
+                                <option name="Department" value="Mechanical">Mechanical</option>
+                                <option name="Department" value="Computers">Computers</option>
+                                <option name="Department" value="Electrical">Electrical</option>
+                                <option name="Department" value="Humanities">Humanities</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label> Department </label>
-                            <select name="department" class="form-control" required>
-                                <option value="">--Select Department--</option>
-                                <option name="Branch" value="IT">IT</option>
-                                <option name="Branch" value="EXTC">EXTC</option>
-                                <option name="Branch" value="Mechanical">Mechanical</option>
-                                <option name="Branch" value="Computers">Computers</option>
-                                <option name="Branch" value="Electrical">Electrical</option>
-                                <option name="Branch" value="Humanities">Humanities</option>
-                            </select>
-                        </div> 
-
-                        <div class="form-group">
-                            <label> Co-ordinator </label>
-                            <input type="text" name="Name_of_coordinator" class="form-control" placeholder="Enter Name of Coordinator" required>
+                            <label> Course_coordinator </label>
+                            <input type="text" name="Course_coordinator" class="form-control" placeholder="Enter Course_coordinator" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Title of the Activity </label>
-                            <input type="text" name="Name_of_activity" class="form-control" placeholder="Enter Name of Activity" required>
+                            <label> Programs_offered </label>
+                            <input type="text" name="Programs_offered" class="form-control" placeholder="Programs_offered" required>
                         </div>
 
                         <div class="form-group">
-                            <label>Select Category of the activity </label>
-                            <select name="category" class="form-control" required>
-                                <option value="">--Select Category of Activity--</option>
-                                <option name="Category" value="Research_methodology"> Research methodology </option>
-                                <option name="Category" value="Intellectual_Property_Rights">Intellectual Property Rights (IPR)</option>
-                                <option name="Category" value="Entreprenuership">Entreprenuership</option>
-                                <option name="Category" value="Soft_skills">Soft skills</option>
-                                <option name="Category" value="Language_and_communication_skills">Language and Communication Skills</option>
-                                <option name="Category" value="Life_skills">Life Skills (Yoga, physical fitness, health and hygiene)</option>
-                                <option name="Category" value="ICT">ICT</option>
-                                <option name="Category" value="computing_skills">Computing Skills</option>
-                                <option name="Category" value="Promotion_of_gender_equity">Proportion of Gender Equity</option>
-                                <option name="Category" value="Value_education">Value Education</option>
-                                <option name="Category" value="Ethics">Ethics</option>
-                                <option name="Category" value="Environmental_consciousness_activity">Environmental Consciousness Activity</option>
-                                <option name="Category" value="others">Others</option>
-                            </select>
+                            <label> Course_code </label>
+                            <input type="text" name="Course_code" class="form-control" placeholder="Enter course code">
                         </div>
 
                         <div class="form-group">
-                            <label> Upload activity report in the appropriate template </label>
+                            <label> No_of_times_offered </label>
+                            <input type="number" name="No_of_times_offered" class="form-control" placeholder="Enter No_of_times_offered" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label> Start_date </label>
+                            <input type="date" name="Start_date" class="form-control" placeholder="Enter start date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label> End_date </label>
+                            <input type="date" name="End_date" class="form-control" placeholder="Enter end date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Duration </label>
+                            <input type="number" name="Duration" class="form-control" placeholder="Enter duration" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label> No_of_students_enrolled </label>
+                            <input type="number" name="No_of_students_enrolled" class="form-control" placeholder="Enter No_of_students_enrolled" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label> No_of_students_completing </label>
+                            <input type="number" name="No_of_students_completing" class="form-control" placeholder="Enter No_of_students_completing" required>
+                        </div>
+
+
+
+                
+
+                        
+
+                        <div class="form-group">
+                            <label> Upload Report </label>
                             <input type="file" name="pdffile1" id="pdffile1" required/><br>
                                     <img src="" id="pdf-file1-tag" width="100px" />
 
@@ -153,27 +146,7 @@ session_start();
                                         });
                                     </script><br>
 						</div>
-                        <div class="form-group">
-                            <label> Submit front page of book </label>						
-						    <input type="file" name="pdffile2" id="pdffile2" required/><br>
-                                    <img src="" id="pdf-file2-tag" width="100px" />
-
-                                    <script type="text/javascript">
-                                        function readURL(input) {
-                                            if (input.files && input.files[0]) {
-                                                var reader = new FileReader();
-                                                
-                                                reader.onload = function (e) {
-                                                    $('#pdf-file2-tag').attr('src', e.target.result);
-                                                }
-                                                reader.readAsDataURL(input.files[0]);
-                                            }
-                                        }
-                                        $("#pdffile2").change(function(){
-                                            readURL(this);
-                                        });
-                                    </script><br>
-						</div>			
+                       			
 
 
                     </div>
@@ -231,7 +204,7 @@ session_start();
                 ?>
 
             <div class="card-body mt-5">
-                <h2>WORKSHOPS/ SEMINARS CONDUCTED</h2>
+                <h2> Certificate programs</h2>
             </div>
             <div class="card">
                 <div class="card-body btn-group">
@@ -260,19 +233,19 @@ session_start();
                     <table id="datatableid" class="table table-bordered table-dark mt-2">
                         <thead>
                             <tr>
-                                <th scope="col"> S.NO </th>
-                                <th scope="col"> NAME OF THE CLUB</th>
-                                <th scope="col"> YEAR </th>
-                                <th scope="col"> WORKSHOP / SEMINAR </th>
-                                <th scope="col"> DEPARTMENT</th>
-                                <th scope="col"> CO-ORDINATOR </th>
-                                <th scope="col"> TITLE OF THE WORKSHOP/SEMINAR </th>
-								<th scope="col"> CATEGORY OF THE ACTIVITY </th>
-                                <th scope="col"> IF OTHERS, PLEASE MENTION THE CATEGORY</th>
-                                <th scope="col"> NUMBER OF PARTICIPANTS </th>
-                                <th scope="col"> STARTING DATE </th>
-                                <th scope="col"> ENDING DATE </th>
-                                <th scope="col"> UPLOAD ACTIVITY REPORT</th>
+                                <th scope="col"> ID </th>
+                                <th scope="col"> Department </th>
+                                <th scope="col"> Course Coordinator </th>
+                                <th scope="col"> Programs Offered </th>
+                                <th scope="col"> Course Code </th>
+                                <th scope="col"> Year of offering </th>
+                                <th scope="col"> No of times offered </th>
+								<th scope="col"> Start date </th>
+                                <th scope="col"> End date </th>
+                                <th scope="col"> Duration </th>
+                                <th scope="col"> No of students enrolled </th>
+                                <th scope="col"> No of students completing </th>
+                                <th scope="col"> Upload Report </th>
                                
                             </tr>
                         </thead>
@@ -280,17 +253,18 @@ session_start();
                         <?php
                         $user = $_SESSION["role"];
                         
-                        $result = "SELECT * FROM ecell WHERE username = '$user'";
+                        $result = "SELECT * FROM branchadmins WHERE username = '$user'";
 
                         $query = mysqli_query($connection, $result);
                         $queryresult = mysqli_num_rows($query); 
                             if($queryresult > 0){
                                 while($row = mysqli_fetch_assoc($query)){ 
-                                    $s_no = $row['id'];
+                                    $id = $row['id'];
+                                    $branch = $row['branch'];
                                 }  
                             }
 
-                        $table_query = "SELECT * FROM ecell WHERE user_id=$s_no";
+                        $table_query = "SELECT * FROM certificates WHERE user_id=$id";
                         
                         $query_run = mysqli_query($connection, $table_query);
                         $query_result = mysqli_num_rows($query_run); ?>
@@ -300,22 +274,23 @@ session_start();
                                             ?>
                         <tbody> <!-- change -->
                             <tr>
-                                <td> <?php echo $developer['s_no']; ?> </td>
-                                <td> <?php echo $developer['club']; ?> </td> 
-                                <td> <?php echo $developer['year']; ?> </td>
-                                <td> <?php echo $developer['workshop/seminar']; ?> </td>
-                                <td> <?php echo $developer['dept']; ?> </td>
-                                <td> <?php echo $developer['coordinator']; ?> </td>
-                                <td> <?php echo $developer['title']; ?> </td>
-                                <td> <?php echo $developer['category']; ?> </td>
-                                <td> <?php echo $developer['others']; ?> </td>
-                                <td> <?php echo $developer['start_date']; ?> </td>
-                                <td> <?php echo $developer['end_date']; ?> </td>
+                                <td> <?php echo $developer['id']; ?> </td>
+                                <td> <?php echo $developer['Department']; ?> </td> 
+                                <td> <?php echo $developer['Course_coordinator']; ?> </td>
+                                <td> <?php echo $developer['Programs_offered']; ?> </td>
+                                <td> <?php echo $developer['Course_code']; ?> </td>
+                                <td> <?php echo $developer['Year_of_offering']; ?> </td>
+                                <td> <?php echo $developer['No_of_times_offered']; ?> </td>
+                                <td> <?php echo $developer['Start_date']; ?> </td>
+                                <td> <?php echo $developer['End_date']; ?> </td>
+                                <td> <?php echo $developer['Duration']; ?> </td>
+                                <td> <?php echo $developer['No_of_students_enrolled']; ?> </td>
+                                <td> <?php echo $developer['No_of_students_completing']; ?> </td>
                                 <td>
                             <!--<a href="read.php?viewid=<?php echo htmlentities ($developer['id']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>-->
                             <a class="edit btn-success editbtn" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="uploadsindexit/<?php echo $developer['pdffile1']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
-							<a href="uploadsfrontit/<?php echo $developer['pdffile2']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
+                            
+							<!-- <a href="uploadsfrontit/<?php echo $developer['pdffile2']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a> -->
                             <a class="delete btn-danger deletebtn" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
 							
                             
@@ -364,52 +339,61 @@ session_start();
                         <input type="hidden" name="update_id" id="update_id">
 
                         <div class="form-group">
-                            <label> Academic Year </label>
-                            <input type="text"  id="Year_Of_Publication" name="Year_Of_Publication" class="form-control" required>
+                            <label> Year of offering </label>
+                            <input type="text"  id="Year_Of_offering" name="Year_of_offering" class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Department/Branch Name </label>
-                            <input type="text"  id="Branch" name="Branch" value="$branch" class="form-control" required>
+                            <label> Department </label>
+                            <input type="text"  id="Department" name="Department"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Title of the Book Published </label>
-                            <input type="text"  id="Title_Of_The_Book_Published" name="Title_Of_The_Book_Published" class="form-control" placeholder="Enter Title" required>
+                            <label> Course_coordinator </label>
+                            <input type="text"  id="Course_coordinator" name="Course_coordinator" class="form-control" placeholder="Enter Course coordinator" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Name of the Teacher </label>
-                            <input type="text" name="Name_Of_The_Teacher" id="Name_Of_The_Teacher" class="form-control" placeholder="Name of the teacher" required>
+                            <label> Programs_offered </label>
+                            <input type="text" name="Programs_offered" id="Programs_offered" class="form-control" placeholder="Programs_offered" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Enter title of chapter published in book </label>
-                            <input type="text" name="Title_Of_The_Chapter_Published_In_The_Book"  id="Title_Of_The_Chapter_Published_In_The_Book" class="form-control" placeholder="Enter Title of Chapter">
+                            <label> Course_code</label>
+                            <input type="text" name="Course_code"  id="Course_code" class="form-control" placeholder="Enter course code">
                         </div>
 
                         <div class="form-group">
-                            <label> Name of publisher </label>
-                            <input type="text" name="Name_Of_The_Publisher" id="Name_Of_The_Publisher" class="form-control" placeholder="Enter Name of Publisher" required>
+                            <label>  No_of_times_offered</label>
+                            <input type="number" name="No_of_times_offered" id="No_of_times_offered" class="form-control" placeholder="Enter No_of_times_offered " required>
                         </div>
 
                         <div class="form-group">
-                            <label>Select National/International</label>
-                            <select id="National_or_International" name="National_Or_International" class="form-control" required>
-                                <option id="National_or_International" name="National_Or_International" value="National">National</option>
-                                <option id="National_or_International" name="National_Or_International" value="International">International</option>
-                            </select>
+                            <label>  Start_date</label>
+                            <input type="date" name="Start_date" id="Start_date" class="form-control" placeholder="Enter Start_date " required>
                         </div>
 
                         <div class="form-group">
-                            <label> Enter ISBN/ISSN number </label>
-                            <input type="text" name="ISBN_Or_ISSN_Number" id="ISBN_Or_ISSN_Number" class="form-control" placeholder="Enter ISBN/ISSN number" required >
+                            <label>  End_date</label>
+                            <input type="date" name="End_date" id="End_date" class="form-control" placeholder="Enter End_date " required>
                         </div>
 
                         <div class="form-group">
-                            <label> Enter Volume Issue </label>
-                            <input type="text" name="Volume_Issue" id="Volume_Issue" class="form-control" placeholder="Enter Volume" required>
+                            <label>  Duration </label>
+                            <input type="number" name= "Duration" id= "Duration" class="form-control" placeholder="Enter Duration  " required>
                         </div>
+
+                        <div class="form-group">
+                            <label>  No_of_students_enrolled</label>
+                            <input type="number" name="No_of_students_enrolled" id="No_of_students_enrolled" class="form-control" placeholder="Enter No_of_students_enrolled " required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>  No_of_students_completing</label>
+                            <input type="number" name="No_of_students_completing" id="No_of_students_completing" class="form-control" placeholder="Enter No_of_students_completing " required>
+                        </div>
+
+                        
                         
 						
 
@@ -431,25 +415,28 @@ session_start();
                 <h4> Search Data </h4>
                     <table class="table table-bordered ">
                     <thead>
-                        <tr>
-                            <th> ID </th> 
-                            <th> NAME OF TEACHER </th>
-                            <th> BRANCH </th>
-                            <th> TITLE OF BOOK </th>
-                            <th> TITLE OF CHAPTER </th>
-                            <th> NAME OF PUBLISHER </th>
-                            <th> NATIONAL </th>
-                            <th> ISBN/ISSN </th>
-                            <th> PUBLICATION YEAR </th>
-                            <th> VOLUME ISSUE </th>
-                            <th> ACTION </th>
-                        </tr>
-                    <thead>       
+                            <tr>
+                                <th> ID </th>
+                                <th> Department </th>
+                                <th> Course Coordinator </th>
+                                <th> Programs Offered </th>
+                                <th> Course Code </th>
+                                <th> Year of offering </th>
+                                <th> No of times offered </th>
+								<th> Start date </th>
+                                <th> End date </th>
+                                <th> Duration </th>
+                                <th> No of students enrolled </th>
+                                <th> No of students completing </th>
+                                <th> Upload Report </th>
+                               
+                            </tr>
+                        </thead>       
 <?php 
     if (isset($_POST["submit"])) {
         $str = mysqli_real_escape_string($connection, $_POST["search"]);
 
-        $sth = "SELECT * FROM `bookschapter` WHERE user_id=$id AND (Branch LIKE '%$str%' OR Name_Of_The_Teacher LIKE '%$str%' OR Title_Of_The_Book_Published LIKE '%$str%' OR Title_Of_The_Chapter_Published_In_The_Book LIKE '%$str%' OR Name_Of_The_Publisher LIKE '%$str%' OR National_Or_International LIKE '$str' OR ISBN_Or_ISSN_Number LIKE '%$str%' OR Year_Of_Publication LIKE '%$str%' OR Volume_Issue LIKE '%$str%') ";
+        $sth = "SELECT * FROM `certificates` WHERE user_id=$id AND (Department LIKE '%$str%' OR Course_coordinator LIKE '%$str%' OR Programs_offered LIKE '%$str%' OR Course_code LIKE '%$str%' OR Year_of_offering LIKE '%$str%' OR No_of_times_offered LIKE '$str' OR Start_date LIKE '%$str%' OR End_date LIKE '%$str%' OR Duration LIKE '%$str%' OR No_of_students_enrolled LIKE '%$str%' OR No_of_students_completing LIKE '%$str%') ";
         
         $result = mysqli_query($connection, $sth);
         $queryresult = mysqli_num_rows($result); ?>
@@ -468,20 +455,22 @@ session_start();
              
                     <tr>                
                         <td> <?php echo $row['id']; ?> </td>
-                        <td> <?php echo $row['Name_Of_The_Teacher']; ?> </td> 
-                        <td> <?php echo $row['Branch']; ?> </td>
-                        <td> <?php echo $row['Title_Of_The_Book_Published']; ?> </td>
-                        <td> <?php echo $row['Title_Of_The_Chapter_Published_In_The_Book']; ?> </td>
-                        <td> <?php echo $row['Name_Of_The_Publisher']; ?> </td>
-                        <td> <?php echo $row['National_Or_International']; ?> </td>
-                        <td> <?php echo $row['ISBN_Or_ISSN_Number']; ?> </td>
-                        <td> <?php echo $row['Year_Of_Publication']; ?> </td>
-                        <td> <?php echo $row['Volume_Issue']; ?> </td>
-                        <td>
+                                <td> <?php echo $row['Department']; ?> </td> 
+                                <td> <?php echo $row['Course_coordinator']; ?> </td>
+                                <td> <?php echo $row['Programs_offered']; ?> </td>
+                                <td> <?php echo $row['Course_code']; ?> </td>
+                                <td> <?php echo $row['Year_of_offering']; ?> </td>
+                                <td> <?php echo $row['No_of_times_offered']; ?> </td>
+                                <td> <?php echo $row['Start_date']; ?> </td>
+                                <td> <?php echo $row['End_date']; ?> </td>
+                                <td> <?php echo $row['Duration']; ?> </td>
+                                <td> <?php echo $row['No_of_students_enrolled']; ?> </td>
+                                <td> <?php echo $row['No_of_students_completing']; ?> </td>
+                                <td>
                             <!--<a href="read.php?viewid=<?php echo htmlentities ($row['id']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>-->
                             <a class="edit btn-success editbtn" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
                             <a href="uploadsindexit/<?php echo $row['pdffile1']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
-							<a href="uploadsfrontit/<?php echo $row['pdffile2']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a>
+							<!-- <a href="uploadsfrontit/<?php echo $row['pdffile2']; ?>"  class="download" title="Download" data-toggle="tooltip"><i class="fa fa-download"></i></a> -->
                             <a class="delete btn-danger deletebtn" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
 							
                             
@@ -558,17 +547,19 @@ session_start();
                 console.log(data);
                 //chnage this keep same variable as above
                 $('#update_id').val(data[0]);
-                $('#Name_Of_The_Teacher').val(data[1]);
-                $('#Branch').val(data[2]);
-                $('#Title_Of_The_Book_Published').val(data[3]);
-                $('#Title_Of_The_Chapter_Published_In_The_Book').val(data[4]);
-                $('#Name_Of_The_Publisher').val(data[5]);
-                $('#National_Or_International').val(data[6]);
-                $('#ISBN_Or_ISSN_Number').val(data[7]);
-                $('#Year_Of_Publication').val(data[8]);
-                $('#Volume_Issue').val(data[9]);
-                $('#pdffile1').val(data[10]);
-                $('#pdffile2').val(data[10]);
+                $('#Department').val(data[1]);
+                $('#Course_coordinator').val(data[2]);
+                $('#Programs_offered').val(data[3]);
+                $('#Course_code').val(data[4]);
+                $('#Year_of_offering').val(data[5]);
+                $('#No_of_times_offered').val(data[6]);
+                $('#Start_date').val(data[7]);
+                $('#End_date').val(data[8]);
+                $('#Duration').val(data[9]);
+                $('#No_of_students_enrolled').val(data[10]);
+                $('#No_of_students_completing').val(data[11]);
+                $('#pdffile1').val(data[12]);
+                // $('#pdffile2').val(data[13]);
             });
         });
     </script>
