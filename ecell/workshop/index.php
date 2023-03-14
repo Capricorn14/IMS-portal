@@ -11,7 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> RESEARCH PROJECTS / SEMINARS</title>
+    <title> WORKSHOP/SEMINARS</title>
 
     <link rel="stylesheet" href="styles.css">
     
@@ -76,48 +76,64 @@ session_start();
                         </div> -->
 
                         <div class="form-group">
-                            <label> Title of the Book Published </label>
-                            <input type="text" name="Title_Of_The_Book_Published" class="form-control" placeholder="Enter Title" required>
+                            <label> Year </label>
+                            <input type="text" name="year" class="form-control" placeholder="Year in which workshop conducted" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Name of the Teacher </label>
-                            <input type="text" name="Name_Of_The_Teacher" class="form-control" placeholder="Name of the teacher" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label> Enter title of chapter published in book </label>
-                            <input type="text" name="Title_Of_The_Chapter_Published_In_The_Book" class="form-control" placeholder="Enter Title of Chapter">
-                        </div>
-
-                        <div class="form-group">
-                            <label> Name of publisher </label>
-                            <input type="text" name="Name_Of_The_Publisher" class="form-control" placeholder="Enter Name of Publisher" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Select National/International</label>
-                            <select name="National_Or_International" class="form-control" required>
-                                <option value="">--Select Type of Publication--</option>
-                                <option name="National_Or_International" value="National">National</option>
-                                <option name="National_Or_International" value="International">International</option>
+                            <label> Type of Activity </label>
+                            <select name="workshop_or_seminar" class="form-control" required>
+                                <option value="">--Select Type of Activity--</option>
+                                <option name="workshop_or_seminar" value="workshop">Workshop</option>
+                                <option name="workshop_or_seminar" value="seminar">Seminar</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label> Enter ISBN/ISSN number </label>
-                            <input type="number" name="ISBN_Or_ISSN_Number" class="form-control" placeholder="Enter ISBN/ISSN number" required>
+                            <label> Department </label>
+                            <select name="department" class="form-control" required>
+                                <option value="">--Select Department--</option>
+                                <option name="Branch" value="IT">IT</option>
+                                <option name="Branch" value="EXTC">EXTC</option>
+                                <option name="Branch" value="Mechanical">Mechanical</option>
+                                <option name="Branch" value="Computers">Computers</option>
+                                <option name="Branch" value="Electrical">Electrical</option>
+                                <option name="Branch" value="Humanities">Humanities</option>
+                            </select>
+                        </div> 
+
+                        <div class="form-group">
+                            <label> Co-ordinator </label>
+                            <input type="text" name="Name_of_coordinator" class="form-control" placeholder="Enter Name of Coordinator" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Enter Volume Issue </label>
-                            <input type="text" name="Volume_Issue" class="form-control" placeholder="Enter Volume" required>
+                            <label> Title of the Activity </label>
+                            <input type="text" name="Name_of_activity" class="form-control" placeholder="Enter Name of Activity" required>
                         </div>
 
-                        
+                        <div class="form-group">
+                            <label>Select Category of the activity </label>
+                            <select name="category" class="form-control" required>
+                                <option value="">--Select Category of Activity--</option>
+                                <option name="Category" value="Research_methodology"> Research methodology </option>
+                                <option name="Category" value="Intellectual_Property_Rights">Intellectual Property Rights (IPR)</option>
+                                <option name="Category" value="Entreprenuership">Entreprenuership</option>
+                                <option name="Category" value="Soft_skills">Soft skills</option>
+                                <option name="Category" value="Language_and_communication_skills">Language and Communication Skills</option>
+                                <option name="Category" value="Life_skills">Life Skills (Yoga, physical fitness, health and hygiene)</option>
+                                <option name="Category" value="ICT">ICT</option>
+                                <option name="Category" value="computing_skills">Computing Skills</option>
+                                <option name="Category" value="Promotion_of_gender_equity">Proportion of Gender Equity</option>
+                                <option name="Category" value="Value_education">Value Education</option>
+                                <option name="Category" value="Ethics">Ethics</option>
+                                <option name="Category" value="Environmental_consciousness_activity">Environmental Consciousness Activity</option>
+                                <option name="Category" value="others">Others</option>
+                            </select>
+                        </div>
 
                         <div class="form-group">
-                            <label> Submit Index page of book showing list of author </label>
+                            <label> Upload activity report in the appropriate template </label>
                             <input type="file" name="pdffile1" id="pdffile1" required/><br>
                                     <img src="" id="pdf-file1-tag" width="100px" />
 
@@ -215,7 +231,7 @@ session_start();
                 ?>
 
             <div class="card-body mt-5">
-                <h2> Book Chapters/Books Published</h2>
+                <h2>WORKSHOPS/ SEMINARS CONDUCTED</h2>
             </div>
             <div class="card">
                 <div class="card-body btn-group">
@@ -244,18 +260,19 @@ session_start();
                     <table id="datatableid" class="table table-bordered table-dark mt-2">
                         <thead>
                             <tr>
-                                <th scope="col"> ID </th>
-                                <th scope="col"> NAME OF TEACHER </th>
-                                <th scope="col"> BRANCH </th>
-                                <th scope="col"> TITLE OF BOOK </th>
-                                <th scope="col"> TITLE OF CHAPTER </th>
-                                <th scope="col"> NAME OF PUBLISHER </th>
-                                <th scope="col"> NATIONAL </th>
-								<th scope="col"> ISBN/ISSN </th>
-                                <th scope="col"> PUBLICATION YEAR </th>
-                                <th scope="col"> VOLUME ISSUE </th>
-                                
-                                <th scope="col"> ACTION </th>
+                                <th scope="col"> S.NO </th>
+                                <th scope="col"> NAME OF THE CLUB</th>
+                                <th scope="col"> YEAR </th>
+                                <th scope="col"> WORKSHOP / SEMINAR </th>
+                                <th scope="col"> DEPARTMENT</th>
+                                <th scope="col"> CO-ORDINATOR </th>
+                                <th scope="col"> TITLE OF THE WORKSHOP/SEMINAR </th>
+								<th scope="col"> CATEGORY OF THE ACTIVITY </th>
+                                <th scope="col"> IF OTHERS, PLEASE MENTION THE CATEGORY</th>
+                                <th scope="col"> NUMBER OF PARTICIPANTS </th>
+                                <th scope="col"> STARTING DATE </th>
+                                <th scope="col"> ENDING DATE </th>
+                                <th scope="col"> UPLOAD ACTIVITY REPORT</th>
                                
                             </tr>
                         </thead>
@@ -263,18 +280,17 @@ session_start();
                         <?php
                         $user = $_SESSION["role"];
                         
-                        $result = "SELECT * FROM credentials WHERE username = '$user'";
+                        $result = "SELECT * FROM ecell WHERE username = '$user'";
 
                         $query = mysqli_query($connection, $result);
                         $queryresult = mysqli_num_rows($query); 
                             if($queryresult > 0){
                                 while($row = mysqli_fetch_assoc($query)){ 
-                                    $id = $row['id'];
-                                    $branch = $row['branch'];
+                                    $s_no = $row['id'];
                                 }  
                             }
 
-                        $table_query = "SELECT * FROM bookschapter WHERE user_id=$id";
+                        $table_query = "SELECT * FROM ecell WHERE user_id=$s_no";
                         
                         $query_run = mysqli_query($connection, $table_query);
                         $query_result = mysqli_num_rows($query_run); ?>
@@ -284,16 +300,17 @@ session_start();
                                             ?>
                         <tbody> <!-- change -->
                             <tr>
-                                <td> <?php echo $developer['id']; ?> </td>
-                                <td> <?php echo $developer['Name_Of_The_Teacher']; ?> </td> 
-                                <td> <?php echo $developer['Branch']; ?> </td>
-                                <td> <?php echo $developer['Title_Of_The_Book_Published']; ?> </td>
-                                <td> <?php echo $developer['Title_Of_The_Chapter_Published_In_The_Book']; ?> </td>
-                                <td> <?php echo $developer['Name_Of_The_Publisher']; ?> </td>
-                                <td> <?php echo $developer['National_Or_International']; ?> </td>
-                                <td> <?php echo $developer['ISBN_Or_ISSN_Number']; ?> </td>
-                                <td> <?php echo $developer['Year_Of_Publication']; ?> </td>
-                                <td> <?php echo $developer['Volume_Issue']; ?> </td>
+                                <td> <?php echo $developer['s_no']; ?> </td>
+                                <td> <?php echo $developer['club']; ?> </td> 
+                                <td> <?php echo $developer['year']; ?> </td>
+                                <td> <?php echo $developer['workshop/seminar']; ?> </td>
+                                <td> <?php echo $developer['dept']; ?> </td>
+                                <td> <?php echo $developer['coordinator']; ?> </td>
+                                <td> <?php echo $developer['title']; ?> </td>
+                                <td> <?php echo $developer['category']; ?> </td>
+                                <td> <?php echo $developer['others']; ?> </td>
+                                <td> <?php echo $developer['start_date']; ?> </td>
+                                <td> <?php echo $developer['end_date']; ?> </td>
                                 <td>
                             <!--<a href="read.php?viewid=<?php echo htmlentities ($developer['id']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>-->
                             <a class="edit btn-success editbtn" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
