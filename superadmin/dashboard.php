@@ -59,9 +59,11 @@
     <div class="card">
       <div class="box">
         <div class="content">
-          <h4>RESEARCH PROJECT</h4>
+          <h4>RESEARCH PROJECT
+            / CONSULTANCIES
+          </h4>
           <p>details</p>
-          <a href="researchprojects/index.php">Go to Criteria</a>
+          <a href="researchprojects-consultancies/index.php">Go to Criteria</a>
         </div>
       </div>
     </div>

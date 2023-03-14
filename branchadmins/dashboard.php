@@ -58,6 +58,18 @@
       </div>
     </div>
 
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h4>RESEARCH PROJECTS
+            / CONSULTANCIES
+          </h4>
+          <p>attended by faculty</p>
+          <a href="researchprojects-consultancies/index.php">Go to Criteria</a>
+        </div>
+      </div>
+    </div>
+
   
   <div class="footer">
   <a href="developers.html">Developers</a>

@@ -31,21 +31,15 @@
     <div class="card">
       <div class="box">
         <div class="content">
-          <h4>Research Projects</h4>
+          <h4>Research Projects
+            / Consultancies
+          </h4>
           <p>details</p>
-          <a href="researchprojects/index.php">Go to Criteria</a>
+          <a href="researchprojects-consultancies/index.php">Go to Criteria</a>
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="box">
-        <div class="content">
-          <h4>Research Consultancies</h4>
-          <p>details</p>
-          <a href="researchconsultancies/index.php">Go to Criteria</a>
-        </div>
-      </div>
-    </div>
+    
 
     
         
