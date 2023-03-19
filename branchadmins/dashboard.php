@@ -58,7 +58,6 @@
       </div>
     </div>
 
-  
   <div class="footer">
   <a href="developers.html">Developers</a>
   <p>IMS-FCRIT</p>
